@@ -363,3 +363,16 @@ ol {
     color: #777777;
     line-height: 2;
 }
+.copyright-bg{
+    clear: both;
+    background-color: #000000;
+    width: 1920px;
+    height: 100px;
+}
+.copyright-bg .copyright{
+    color: #777777;
+    height: 50px;
+    width: 700px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
