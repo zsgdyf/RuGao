@@ -1,0 +1,238 @@
+/* 清除默认样式 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+	color: #666;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+.header-bg {
+	background: #7b1c00;
+}
+
+.header {
+	width: 1000px;
+	margin: 0 auto;
+	background: url(../img/head-bg.jpg) no-repeat;
+	height: 110px;
+}
+
+.header .logo {
+	padding-top: 38px;
+	float: left;
+	padding-left: 30px;
+}
+
+.header .nav {
+	float: left;
+	margin-left: 59px;
+}
+
+.header .nav li {
+	float: left;
+	width: 115px;
+	/* height: 110px;
+	line-height: 110px; */
+	padding-top: 54px;
+	text-align: center;
+}
+
+.header .nav li a {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.header .nav li a:hover {
+	color: #eeeeee;
+}
+
+.header .lang {
+	float: left;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 14px;
+	padding-top: 55px;
+	margin-left: 50px;
+}
+
+.header .lang a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.header .lang a:hover {
+	color: #ffffff;
+}
+
+.banner-bg {
+	background: url(../img/banner-bg.jpg) repeat-x;
+}
+
+.banner {
+	width: 1000px;
+	height: 545px;
+	margin: 0 auto;
+	background: url(../img/banner.jpg) no-repeat;
+}
+
+.banner ul {
+	background: url(../img/icon-bg.png) no-repeat;
+	width: 328px;
+	height: 80px;
+	/* 不能用内外边距定位 */
+	position: relative;
+	top: 390px;
+}
+
+.banner ul li {
+	float: left;
+	/* 水平居中 */
+	text-align: center;
+	height: 80px;
+	/*宽为 ul 的 50% */
+	width: 50%;
+	/* 垂直居中 */
+	line-height: 80px;
+	font-size: 20px;
+}
+
+.banner ul li .download {
+	color: #f34e04;
+}
+
+.banner ul li a {
+	color: #999;
+}
+
+.banner ul li a:hover {
+	text-decoration: underline;
+}
+
+.video-bg {
+	background: rgb(229, 229, 229);
+	border-top: 1px solid rgb(206, 206, 206);
+	border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.video {
+	width: 1000px;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.video li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.video li h3 {
+	color: #999999;
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.video li:hover h3 {
+	color: #c84100;
+}
+
+.index-icons {
+	background: url(../img/index_icons.png) no-repeat;
+	width: 822px;
+	height: 325px;
+}
+
+.icon-group1 {
+	padding-top: 35px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.icon-group1 li {
+	float: left;
+	width: 25%;
+	height: 200px;
+	text-align: center;
+}
+
+.icon-group1 li h2 {
+	color: #333333;
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.description {
+	color: #666666;
+	font-size: 12px;
+	width: 190px;
+	margin: 0 auto;
+}
+
+.know-more {
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 206px;
+	clear: both;
+}
+
+.footer-bg {
+	background: rgb(47, 47, 47);
+	margin-top: 50px;
+}
+
+.footer {
+	width: 1000px;
+	margin: 0 auto;
+	/* height: 500px; */
+	padding-top: 60px;
+}
+
+.footer .link li {
+	float: left;
+	width: 120px;
+	margin: 0 106.66px;
+
+}
+
+.footer .link li h2 {
+	color: #ffffff;
+	font-size: 14px;
+	border-left: rgb(236, 97, 23) 4px solid;
+	padding-left: 7px;
+	margin-bottom: 20px;
+}
+
+.footer .link li div {
+	line-height: 2;
+	padding-left: 11px;
+}
+
+.footer .link li a {
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.footer .copy {
+	clear: both;
+	text-align: center;
+	font-size: 12px;
+	padding-top: 40px;
+	height: 50px;
+}
+
+.footer .miui {
+	text-align: center;
+	padding-bottom: 40px;
+}
