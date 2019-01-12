@@ -300,12 +300,19 @@ ol {
     margin-left: 20px;
     margin-top: 10px;
 }
+.hot-views ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .hot .hot-views li {
+    display: flex;
     width: 150px;
     height: 150px;
-    float: left;
     margin: 5px;
+    /* float: left;
+    margin: 5px; */
 }
 
 .hot .hot-views li a {
