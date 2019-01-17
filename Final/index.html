@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="style/reset.css" />
+    <link type="text/css" rel="stylesheet" href="style/main.css" />
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+
+      $(function () {
+        $('.aLink').click(function () {
+          if ($('.shopClass_list').hasClass('hide')) {
+            $('.shopClass_list').removeClass('hide')
+            $(this).text('收起<<');
+          } else {
+            $('.shopClass_list').addClass('hide')
+            $(this).text('展开>>');
+          }
+        })
+        $('.shop_img').click(function () {
+          window.location.href = 'introduction.html'
+        })
+        $('.imgNum a').click(function () {
+          $('.imgNum :not(this)').removeClass('active')
+          $(this).addClass('active');
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <div class="headerBar">
+      <div class="topBar">
+        <div class="comWidth">
+          <div class="leftArea">
+            <a href="#" class="collection">收藏网站</a>
+          </div>
+          <div class="rightArea">
+            欢迎来到xx商城！<a href="login.html">[登录]</a><a href="register.html">[免费注册]</a>
+          </div>
+        </div>
+      </div>
+      <div class="logoBar">
+        <div class="comWidth">
+          <div class="logo fl">
+            <a href="index.html"><img src="images/logo.png" alt="xx网" /></a>
+          </div>
+          <div class="search_box fl">
+            <input type="text" class="search_text fl" />
+            <input type="button" value="搜 索" class="search_btn fr" />
+          </div>
+          <div class="shopCar fr">
+            <a href="cart.html"><span class="shopText fl">购物车</span></a>
+
+            <span class="shopNum fl">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="navBox">
+        <div class="comWidth clearfix">
+          <div class="shopClass fl">
+            <a href="classify.html">
+              <h3>全部商品</h3>
+            </a>
+
+            <div class="shopClass_show">
+              <dl class="shopClass_item">
+                <dt>
+                  <a href="#" class="b">手机</a> <a href="#" class="b">数码</a>
+                  <a href="#" class="aLink">展开>></a>
+                </dt>
+                <dd>
+                  <a href="#">小米 6x</a> <a href="#">单反</a>
+                  <a href="#">智能设备</a>
+                </dd>
+              </dl>
+              <dl class="shopClass_item">
+                <dt>
+                  <a href="#" class="b">手机</a> <a href="#" class="b">数码</a>
+                  <a href="#" class="aLink">展开>></a>
+                </dt>
+                <dd>
+                  <a href="#">小米 6x</a> <a href="#">单反</a>
+                  <a href="#">智能设备</a>
+                </dd>
+              </dl>
+              <dl class="shopClass_item">
+                <dt>
+                  <a href="#" class="b">手机</a> <a href="#" class="b">数码</a>
+                  <a href="#" class="aLink">展开>></a>
+                </dt>
+                <dd>
+                  <a href="#">小米 6x</a> <a href="#">单反</a>
+                  <a href="#">智能设备</a>
+                </dd>
+              </dl>
+              <dl class="shopClass_item">
+                <dt>
+                  <a href="#" class="b">手机</a> <a href="#" class="b">数码</a>
+                  <a href="#" class="aLink">展开>></a>
+                </dt>
+                <dd>
+                  <a href="#">小米 6x</a> <a href="#">单反</a>
+                  <a href="#">智能设备</a>
+                </dd>
+              </dl>
+              <dl class="shopClass_item">
+                <dt>
+                  <a href="#" class="b">手机</a> <a href="#" class="b">数码</a>
+                  <a href="#" class="aLink">展开>></a>
+                </dt>
+                <dd>
+                  <a href="#">小米 6x</a> <a href="#">单反</a>
+                  <a href="#">智能设备</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="shopClass_list hide">
+              <div class="shopClass_cont">
+                <dl class="shopList_item">
+                  <dt>电脑手机</dt>
+                  <dd>
+                    <a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a>
+                  </dd>
+                </dl>
+                <dl class="shopList_item">
+                  <dt>电脑手机</dt>
+                  <dd>
+                    <a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a>
+                  </dd>
+                </dl>
+                <dl class="shopList_item">
+                  <dt>电脑手机</dt>
+                  <dd>
+                    <a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a>
+                  </dd>
+                </dl>
+                <dl class="shopList_item">
+                  <dt>电脑手机</dt>
+                  <dd>
+                    <a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a>
+                  </dd>
+                </dl>
+                <dl class="shopList_item">
+                  <dt>电脑手机</dt>
+                  <dd>
+                    <a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a href="#">手机</a><a
+                      href="#">手机</a>
+                  </dd>
+                </dl>
+                <div class="shopList_links">
+                  <a href="#">手机测试内容等等<span></span></a><a href="#">手机等等<span></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="nav fl">
+            <li><a href="#" class="active">数码城</a></li>
+            <li><a href="#">天猫超市</a></li>
+            <li><a href="#">淘抢购</a></li>
+            <li><a href="#">发现</a></li>
+            <li><a href="#">苏宁易购</a></li>
+            <li><a href="#">聚划算</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="banner comWidth clearfix">
+      <div class="banner_bar banner_big">
+        <ul class="imgBox">
+          <li>
+            <a href="#"><img src="images/banner/banner_01.jpg" alt="banner" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/banner/banner_02.jpg" alt="banner" /></a>
+          </li>
+        </ul>
+        <div class="imgNum">
+          <a href="#" class="active"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+        </div>
+      </div>
+    </div>
+    <div class="shopTit comWidth">
+      <span class="icon"></span>
+      <h3>家用手机</h3>
+      <a href="#" class="more">更多&gt;&gt;</a>
+    </div>
+    <div class="shopList comWidth clearfix">
+      <div class="leftArea">
+        <div class="banner_bar banner_sm">
+          <ul class="imgBox">
+            <li>
+              <a href="#"><img src="images/banner/banner_sm_01.jpg" alt="banner" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner" /></a>
+            </li>
+          </ul>
+          <div class="imgNum">
+            <a href="#" class="active"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="rightArea">
+        <div class="shopList_top clearfix">
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+        </div>
+        <div class="shopList_sm clearfix">
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopTit comWidth">
+      <span class="icon"></span>
+      <h3>家用电脑</h3>
+      <a href="#" class="more">更多&gt;&gt;</a>
+    </div>
+    <div class="shopList comWidth clearfix">
+      <div class="leftArea">
+        <div class="banner_bar banner_sm">
+          <ul class="imgBox">
+            <li>
+              <a href="#"><img src="images/banner/banner_sm_01.jpg" alt="banner" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/banner/banner_sm_02.jpg" alt="banner" /></a>
+            </li>
+          </ul>
+          <div class="imgNum">
+            <a href="#" class="active"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="rightArea">
+        <div class="shopList_top clearfix">
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+          <div class="shop_item">
+            <div class="shop_img">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <h3>红米 Note 4x</h3>
+            <p>999元</p>
+          </div>
+        </div>
+        <div class="shopList_sm clearfix">
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+          <div class="shopItem_sm">
+            <div class="shopItem_smImg">
+              <a href="#"><img src="images/shopImg.jpg" alt="" /></a>
+            </div>
+            <div class="shopItem_text">
+              <p>多彩金属、超长续航的国民手机</p>
+              <h3>￥999</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hr_25"></div>
+    <div class="footer">
+      <p>
+        <a href="about.html">xx简介</a><i>|</i><a href="#">xx公告</a><i>|</i>
+        <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-000-1234
+      </p>
+      <p>
+        Copyright &copy; 2019
+        版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证xxxx-xxxx号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123
+      </p>
+    </div>
+  </body>
+
+</html>

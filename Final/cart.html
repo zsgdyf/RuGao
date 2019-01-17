@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link type="text/css" rel="stylesheet" href="style/reset.css">
+		<link type="text/css" rel="stylesheet" href="style/main.css">
+		<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+<![endif]-->
+		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#address").focus(function () {
+					if ($(this).val() == "最多输入20个汉字") {
+						$(this).val("");
+					}
+				})
+				$("#address").blur(function () {
+					if ($(this).val() == "") {
+						$(this).val("最多输入20个汉字");
+					}
+				})
+				$("#person").focus(function () {
+					if ($(this).val() == "最多10个汉字") {
+						$(this).val("");
+					}
+				})
+				$("#person").blur(function () {
+					if ($(this).val() == "") {
+						$(this).val("最多10个汉字");
+					}
+				})
+				$("#phone").focus(function () {
+					if ($(this).val() == "如：12312312") {
+						$(this).val("");
+					}
+				})
+				$("#phone").blur(function () {
+					if ($(this).val() == "") {
+						$(this).val("如：12312312");
+					}
+				})
+				$(".sure").click(function () {
+					$(".s01").css("color", "black");
+				})
+				$(".way_sure").click(function () {
+					$(".s02").css("color", "black");
+				})
+				$(".list_sure").click(function () {
+					$(".s03").css("color", "black");
+				})
+				$(".backCar").click(function () {
+					$(".active").css("color", "#ff5800");
+				})
+				$(".add").click(function () {
+					var i = parseInt($(".t_num input").val());
+					$(".t_num input").val(i + 1);
+					var j = parseInt($(".t_num input").val());
+					$(".t_red p").html(j * 999)
+					$(".cart_rmb .number").html(j * 999)
+				})
+				$(".minis").click(function () {
+					var i = parseInt($(".t_num input").val())
+					if (i >= 1) {
+						$(".t_num input").val(i - 1);
+					} else {
+						return 0
+					}
+					var j = parseInt($(".t_num input").val());
+					$(".t_red p").html(j * 999);
+					$(".cart_rmb .number").html(j * 999)
+				})
+				$(".post").click(function () {
+					var j = parseInt($(".t_num input").val());
+					var word = "交易成功，共计" + j * 999 + "元";
+					alert(word);
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="headerBar">
+			<div class="topBar">
+				<div class="comWidth">
+					<div class="leftArea">
+						<a href="#" class="collection">收藏网站</a>
+					</div>
+					<div class="rightArea">
+						欢迎来到xx商城！<a href="login.html">[登录]</a><a href="#">[免费注册]</a>
+					</div>
+				</div>
+			</div>
+			<div class="logoBar">
+				<div class="comWidth">
+					<div class="logo fl">
+						<a href="index.html"><img src="images/logo.png" alt="慕课网"></a>
+					</div>
+					<div class="stepBox fr">
+						<div class="step"></div>
+						<ul class="step_text">
+							<li class="s01 active">①填写收获地址</li>
+							<li class="s02 active">②选择支付方式</li>
+							<li class="s03 active">③编辑送货清单</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shoppingCart comWidth">
+			<div class="shopping_item">
+				<h3 class="shopping_tit">收货地址</h3>
+				<div class="shopping_cont padding_shop">
+					<ul class="shopping_list">
+						<li><span class="shopping_list_text"><em>*</em>选择地区：</span>
+							<div class="select">
+								<select class="area">
+									<option value="">海淀区五环内</option>
+									<option value="">北京</option>
+									<option value="">上海</option>
+									<option value="">武汉</option>
+									<option value="">广州</option>
+									<option value="">深圳</option>
+								</select>
+								<!-- <ul class="show_select">
+							<li>上帝</li>
+							<li>五道口</li>
+							<li>上帝</li>
+						</ul> -->
+							</div>
+						</li>
+						<li><span class="shopping_list_text"><em>*</em>详细地址：</span><input type="text" id="address" value="最多输入20个汉字"
+							 class="input input_b"></li>
+						<li><span class="shopping_list_text"><em>*</em>收 货 人：</span><input type="text" id="person" value="最多10个" class="input"></li>
+						<li><span class="shopping_list_text"><em>*</em>手 机：</span><input type="text" id="phone" value="如：12312312" class="input"><span
+							 class="cart_tel">&nbsp;或固定电话：</span><input type="text" class="input input_s"><span class="jian">-</span><input
+							 type="text" class="input input_s2"><span class="jian">-</span><input type="text" class="input input_s2"></li>
+						<button type="button" class="sure">确认收货地址</button>
+					</ul>
+				</div>
+			</div>
+			<div class="hr_25"></div>
+			<div class="shopping_item">
+				<h3 class="shopping_tit">支付方式</h3>
+				<div class="shopping_cont padding_shop">
+					<ul class="shopping_list">
+						<li><input type="radio" class="radio" checked="checked" id="r1" name="way"><label for="r1">微信支付</label><img src="images/weixin.jpg"
+							 height="24px" width="24px"></li>
+						<li><input type="radio" class="radio" id="r2" name="way"><label for="r2">支付宝支付</label><img src="images/zhifubao.jpg"
+							 height="24px" width="57px"></li>
+						<li><button type="button" class="way_sure">我已确认</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="hr_25"></div>
+			<div class="shopping_item">
+				<h3 class="shopping_tit">送货清单<a href="#" class="backCar">返回购物车修改</a></h3>
+				<div class="shopping_cont pb_10">
+					<div class="cart_inner">
+						<div class="cart_head clearfix">
+							<div class="cart_item t_name">商品名称</div>
+							<div class="cart_item t_price">单价</div>
+							<div class="cart_item t_return">返现</div>
+							<div class="cart_item t_num">数量</div>
+							<div class="cart_item t_subtotal">小计</div>
+						</div>
+						<div class="cart_cont clearfix">
+							<div class="cart_item t_name">
+								<div class="cart_shopInfo clearfix">
+									<img src="images/des_sm.jpg" alt="">
+									<div class="cart_shopInfo_cont">
+										<p class="cart_link"><a href="#">手机</a></p>
+										<p class="cart_info">手机</p>
+									</div>
+								</div>
+							</div>
+							<div class="cart_item t_price">
+								999
+							</div>
+							<div class="cart_item t_return">无</div>
+							<div class="cart_item t_num">
+								<button type="button" class="add">+</button>
+								<input type="text" class="nums" value="0" />
+								<button type="button" class="minis">-</button>
+							</div>
+							<div class="cart_item t_subtotal t_red">
+								<p class="account">0</p>
+							</div>
+						</div>
+						<div class="cart_message">
+							若有问题请留言
+						</div>
+						<div class="cart_prompt"><i class="cart_prompt_icon"></i>请确认商品信息</div>
+						<div class="cart_cont cart_no_bor clearfix">
+							<div class="cart_item t_name">
+								<div class="cart_shopInfo clearfix">
+									<img src="images/des_sm.jpg" alt="">
+									<div class="cart_shopInfo_cont">
+										<p class="cart_link"><a href="#">手机</a></p>
+										<p class="cart_info">手机</p>
+										<button type="button" class="list_sure">我已确认</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hr_25"></div>
+			<div class="shopping_item">
+				<h3 class="shopping_tit">订单结算</h3>
+				<div class="shopping_cont padding_shop clearfix">
+					<div class="cart_count fr">
+						<div class="cart_rmb">
+							<i>总计：</i><span>&yen;</span><span class="number">0.00</span>
+						</div>
+						<div class="cart_btnBox">
+							<button type="button" class="post">提交订单</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hr_25"></div>
+		<div class="footer">
+			<p><a href="about.html">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+			<p>Copyright &copy; 2006 - 2014
+				慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+			<!-- <p class="web"><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a><a href="#"><img src="images/webLogo.jpg" alt="logo"></a></p> -->
+		</div>
+	</body>
+
+</html>

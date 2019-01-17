@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="style/login.css"/>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			$(function(){
+				$(".login_btn").click(function(){
+					if ($(":text").val()==""||$(":password").val=="") {
+					alert("用户名或密码不能为空");
+					return false;
+				}else{
+					window.location.href="index.html";
+				}
+					
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div class="rlheaderBar">
+	    	<div class="rllogoBar">
+				<div class="comWidth">
+					<div class="rllogo">
+						<a href="index.html"><img src="images/logo.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="loginBox">
+			<div class="login_cont">
+				<ul class="login">
+					<li class="l_tit">邮箱/用户名/手机号</li>
+					<li class="mb_10"><input type="text" class="login_input user_icon"></li>
+					<li class="l_tit">密码</li>
+					<li class="mb_10"><input type="password" class="login_input password_icon"></li>
+					<li class="autoLogin"><input type="checkbox" id="a1" class="checked"><label for="a1">自动登录</label></li>
+					<button type="button" class="login_btn">登录</button>
+				</ul>	
+			<div class="login_partners">
+				<p class="l_tit">使用合作方账号登陆网站</p>
+				<ul class="login_list clearfix">
+					<li><a href="#">QQ</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">网易</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">新浪微博</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">腾讯微博</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">新浪微博</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">腾讯微博</a></li>
+				</ul>
+			</div>
+		</div>
+		<a class="reg_link" href="register.html"></a>
+	</div>
+	<div class="footer">
+			<p><a href="about.html">xx简介</a><i>|</i><a href="#">xx公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-000-1234</p>
+			<p>Copyright &copy; 2019
+				版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证xxxx-xxxx号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="style/register.css" />
+		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			$(function(){
+				$(".regreturn_btn").click(function(){
+					window.location.href="login.html";
+				})
+				$(".reg_btn").click(function(){
+					if ($(":text").val()==""||$(":password").val=="") {
+					alert("用户名或密码不能为空");
+					return false;
+				}else{
+					window.location.href="index.html";
+				}
+				});
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<div class="rlheaderBar">
+			<div class="rllogoBar">
+				<div class="comWidth">
+					<div class="rllogo">
+						<a href="index.html"><img src="images/logo.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="regBox">
+			<div class="reg_cont">
+				<ul class="reg">
+					<li><span class="reg_item"><i>*</i>账户名：</span>
+						<div class="input_item"><input type="text" class="login_input user_icon"></div>
+					</li>
+					<li><span class="reg_item"><i>*</i>密码：</span>
+						<div class="input_item"><input type="password" class="login_input password_icon"></div>
+					</li>
+					<li><span class="reg_item"><i>*</i>再次确认：</span>
+						<div class="input_item"><input type="text" class="login_input password_icon"></div>
+					</li>
+					<li><span class="reg_item"><i>*</i>邮箱：</span>
+						<div class="input_item"><input type="text" class="login_input address_icon"></div>
+					</li>
+					<li class="autoreg"><span class="reg_item">&nbsp;</span><input type="checkbox" id="t1" class="checked"><label for="t1">我同意什么什么条款</label></li>
+					<button type="button" class="reg_btn">注册并登录</button>
+					<button type="button" class="regreturn_btn">已有账号</button>
+				</ul>
+			</div>
+		</div>
+		<div class="hr_25"></div>
+		<div class="footer">
+			<p><a href="about.html">xx简介</a><i>|</i><a href="#">xx公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-000-1234</p>
+			<p>Copyright &copy;
+				2019版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证xxxx-xxxx号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+		</div>
+	</body>
+
+</html>

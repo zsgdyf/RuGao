@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/*logo*/
+.rllogoBar{height:85px; background-color:#dddddd;}
+.rllogo{padding-left:41px;padding-top: 20px;}
+.rllogo img{height: 50px;}
+/*主体*/
+.reg_cont{padding:15px 76px;height: 309px;}
+.login_input{border:#999 solid 1px; height:32px; line-height:32px\9; text-indent:5px; width:100%;}
+.user_icon{background:url(../images/icon/user_icon.png) right center no-repeat;}
+.password_icon{background:url(../images/icon/password_icon.png) right center no-repeat;}
+.address_icon{background: url(../images/icon/address_icon.png) right center no-repeat;}
+.autoreg{padding-top:27px; padding-bottom:28px;}
+.checked{position:relative; top:3px; margin-right:3px;}
+.reg_btn{
+	width: 310px;
+	height: 36px;
+    background-color: #F60;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 110px;
+}
+.regreturn_btn{
+	margin-top: 10px;
+	width: 310px;
+	height: 36px;
+    background-color: #F60;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 110px;
+}
+.rllogoBar .comWidth{width:630px;}
+.regBox{width:628px;height: 455px; margin:10px auto; border:#CCC solid 1px;margin:100px auto;}
+.reg_item{font:14px/34px "宋体"; width:110px; text-align:right; float:left;}
+.reg_item i{color:red; font-style:normal; margin-right:5px;}
+.input_item{width:306px; float:left;}
+.regBox li{height:70px; vertical-align:top;}
+.regBox .autoreg{height:46px; padding:0;}
+.regBox .reg_cont{padding:25px 76px 20px 76px;}
+/*尾巴*/
+.footer {
+    text-align: center;
+    background-color: #000000;
+    line-height: 24px;
+    padding: 50px 0;
+}
+
+.footer i {
+    font-style: normal;
+    margin: 0 5px;
+}
+
+.footer a,.footer p {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: #F60;
+}

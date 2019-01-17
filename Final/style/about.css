@@ -1,0 +1,227 @@
+@charset 'utf-8';
+
+body,h1,h2,h3,p,ul,ol,form,fieldset,figure {
+	margin: 0;
+	padding: 0;
+}
+div,figure,img,input,button {
+	box-sizing: border-box;
+}
+body {
+	background-color: #f5f5f5;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	font-size: 12px;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+ul,ol {
+	list-style: outside none none;
+}
+a {
+	text-decoration: none;
+}
+
+.none {
+	display: none;
+}
+.clearfix:after{  
+     content:".";  
+     height:0;  
+     visibility:hidden;  
+     display:block;  
+     clear:both;  
+}
+
+.sm-visible {
+	display: none;
+}
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(244,244,244);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+#header .center {
+	max-width: 1063px;
+	height: 50px;
+	margin: 0 auto;
+}
+#header .logo {
+	width: 30%;
+	height: 50px;
+	/*background: url(../img/logo.png) no-repeat;*/
+	text-indent: -9999px;
+	float: left;
+}
+
+.logo{
+	padding-left: 0;
+}
+.logo img{
+	width: 16%;
+	height: 60px;
+}
+
+
+#header .link {
+	width: 55%;
+	height: 50px;
+	line-height: 50px;
+	color: #eee;
+	float: right;
+}
+#header .link li {
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#header .link a {
+	color: rgb(107,107,107);/*导航字体颜色*/
+	display: block;
+}
+#header .link a:hover, 
+#header .active a {
+	background-color: rgb(254,87,0);
+}
+
+#footer {
+	background-color: #222;
+	clear:both;
+	position: relative;
+	top: 20px;
+}
+#footer .top {
+	max-width: 1063px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer .block {
+	width: 33.33%;
+	height: 320px;
+	display: block;
+	color: #ccc;
+	text-align: left;
+	vertical-align: top;
+	float:left;
+}
+#footer .bottom {
+	padding: 25px 0;
+	text-align: center;
+	color: rgb(255,255,255);
+	background-color: #000;
+	border-top: 1px solid #444;
+}
+
+#footer h2 {
+	font-weight: normal;
+	padding: 20px 0 0 20px;
+	font-size: 20px;
+}
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
+}
+#footer ul {
+	color: #666;
+	font-size: 14px;
+	text-indent: 20px;
+	line-height: 2;
+}
+#footer .version {
+	color: #777;
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+#footer .sm-hidden{
+	padding-left: 24px;
+}
+
+
+#headline {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	position: relative;
+}
+#headline hgroup {
+	position: absolute;
+	top: 45%;
+	left: 18%;
+}
+#headline h2 {
+	color: rgb(252,119,36);
+	font-family: symbol;
+	font-size: 40px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	color: rgb(252,119,36);
+	letter-spacing: 1px;
+	font-size: 22px;
+}
+#container {
+	max-width: 1920px;
+	margin: 70px 100px 50px 280px;
+	
+}
+
+
+.list {
+	width: 85%;
+	float: left;
+}
+.list h2 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 15px 0;
+	color: #666;
+}
+
+.about p {
+	font-size: 16px;
+	color: #666;
+	line-height: 2;
+	margin: 20px 10px;
+	text-align: left;
+}
+.about address {
+	font-style: normal;
+	font-size: 16px;
+	color: #666;
+	margin: 20px 0;
+	line-height: 1.6;
+}
+
+
+
+/* 底部 */
+.footer {
+    text-align: center;
+    background-color: #000000;
+    line-height: 24px;
+    padding: 50px 0;
+}
+
+.footer i {
+    font-style: normal;
+    margin: 0 5px;
+}
+
+.footer a,.footer p {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: #F60;
+}
